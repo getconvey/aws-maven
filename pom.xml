@@ -14,7 +14,7 @@
 	<artifactId>aws-maven</artifactId>
 	<packaging>jar</packaging>
 	<!-- The 5.0.0.RELEASE portion is the version that we forked from. -->
-	<version>5.0.0.RELEASE.MSH.1</version>
+	<version>5.0.0.RELEASE.MSH.2-SNAPSHOT</version>
 	<name>Amazon Web Services S3 Maven Wagon Support</name>
 	<description>Standard Maven wagon support for s3:// urls</description>
 
