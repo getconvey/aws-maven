@@ -3,7 +3,14 @@
 
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>org.springframework.build</groupId>
+	<parent>
+		<groupId>org.sonatype.oss</groupId>
+		<artifactId>oss-parent</artifactId>
+		<version>7</version>
+	</parent>
+
+	<!-- We've moved this to a group that MainStreetHub has the ability to publish to. -->
+	<groupId>com.mainstreethub.build</groupId>
 	<artifactId>aws-maven</artifactId>
 	<packaging>jar</packaging>
 	<version>5.1.0.BUILD-SNAPSHOT</version>
@@ -137,8 +144,8 @@
 	</licenses>
 
 	<scm>
-		<connection>scm:git:https://github.com/spring-projects/aws-maven.git</connection>
-		<url>https://github.com/spring-projects/aws-maven</url>
+		<connection>scm:git:git@github.com:mainstreethub/aws-maven</connection>
+		<url>https://github.com/mainstrethub/aws-maven</url>
 	</scm>
 
 	<organization>
