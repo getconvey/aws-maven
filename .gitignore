@@ -1,4 +1,5 @@
-.idea/libraries
-.idea/tasks.xml
-.idea/workspace.xml
+.idea/
+*.ipr
+*.iws
+*.iml
 target
