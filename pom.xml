@@ -99,6 +99,15 @@
 					<target>1.7</target>
 				</configuration>
 			</plugin>
+			<!-- Don't worry about syntactically correct javadocs. -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>2.10.1</version>
+				<configuration>
+					<additionalparam>-Xdoclint:none</additionalparam>
+				</configuration>
+			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-deploy-plugin</artifactId>
