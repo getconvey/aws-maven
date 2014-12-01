@@ -13,7 +13,8 @@
 	<groupId>com.mainstreethub.build</groupId>
 	<artifactId>aws-maven</artifactId>
 	<packaging>jar</packaging>
-	<version>5.1.0.BUILD-SNAPSHOT</version>
+	<!-- The 5.0.0.RELEASE portion is the version that we forked from. -->
+	<version>5.0.0.RELEASE.MSH.1-SNAPSHOT</version>
 	<name>Amazon Web Services S3 Maven Wagon Support</name>
 	<description>Standard Maven wagon support for s3:// urls</description>
 
