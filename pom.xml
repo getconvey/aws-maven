@@ -11,7 +11,7 @@
 	<description>Standard Maven wagon support for s3:// urls</description>
 
 	<properties>
-		<amazonaws.version>1.7.1</amazonaws.version>
+		<amazonaws.version>1.9.8</amazonaws.version>
 		<junit.version>4.11</junit.version>
 		<logback.version>1.1.1</logback.version>
 		<mockito.version>1.9.5</mockito.version>
@@ -110,6 +110,10 @@
 				<version>2.16</version>
 				<configuration>
 					<runOrder>random</runOrder>
+					<excludes>
+						<!-- We don't want it creating S3 buckets during running tests/releases. -->
+						<exclude>**/SimpleStorageServiceWagonIntegrationTest.java</exclude>
+					</excludes>
 				</configuration>
 			</plugin>
             <plugin>
