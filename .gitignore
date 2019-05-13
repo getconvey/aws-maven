@@ -1,5 +1,6 @@
-.idea/
-*.ipr
-*.iws
-*.iml
+# Build
 target
+
+# IntelliJ
+*.iml
+.idea
