@@ -8,7 +8,7 @@
 	<artifactId>aws-maven</artifactId>
 	<packaging>jar</packaging>
 	<!-- The 5.0.0.RELEASE.MSH.1 portion is the version that we forked from. -->
-	<version>5.0.0.RELEASE.MSH.1.CONVEY.1-SNAPSHOT</version>
+	<version>5.0.0.RELEASE.MSH.1.CONVEY.1</version>
 	<name>Amazon Web Services S3 Maven Wagon Support</name>
 	<description>Standard Maven wagon support for s3:// urls</description>
 
@@ -151,7 +151,7 @@
 		<connection>scm:git:git@github.com:getconvey/aws-maven</connection>
 		<developerConnection>scm:git:git@github.com:getconvey/aws-maven</developerConnection>
 		<url>https://github.com/getconvey/aws-maven</url>
-	  <tag>HEAD</tag>
+	  <tag>5.0.0.RELEASE.MSH.1.CONVEY.1</tag>
   </scm>
 
 	<organization>
