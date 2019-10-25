@@ -1,6 +1,6 @@
 AWS Maven is a [Maven Wagon][wagon] for [Amazon S3][s3].
 
-Convey's fork is based on [Main Street Hub's fork](https://github.com/mainstreethub/aws-maven) and was further customized for use for all Convey projects, most specifically allowing this extension to be built and used with Java 12+, as well as being easily released to Maven Central.
+Convey's fork is based on [Main Street Hub's fork](https://github.com/mainstreethub/aws-maven) and was further customized for use for all Convey projects, most specifically allowing this extension to be built and used with Java 12+, as well as being easily released to the Maven Central repository.
 
 [wagon]: http://maven.apache.org/wagon/
 [s3]: http://aws.amazon.com/s3/
@@ -50,11 +50,11 @@ Finally the appropriate AWS credentials need to be provided through the credenti
 # Releasing
 
 ## Initial setup
-In order to release this POM to Maven Central you'll need to do some setup
+In order to release this POM to the Maven Central repository you'll need to do some setup
 the very first time.
 
 ### Find the Convey oss.sonatype.org account
-We'll be releasing to Maven Central via oss.sonatype.org using the 
+We'll be releasing to the Maven Central repository via oss.sonatype.org using the 
 sonatype@getconvey.com account.
 
 ### Create a GPG signing key
@@ -91,7 +91,7 @@ Don't put these credentials or this file anywhere other than your laptop!
 
 ## Creating a new release
 
-To release this POM to the Maven Central Profile you'll need to activate
+To release this POM to the Maven Central repository you'll need to activate
 the `sonatype` profile and deploy the POM as you would otherwise normally
 do.
 

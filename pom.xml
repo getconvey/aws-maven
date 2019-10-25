@@ -146,17 +146,16 @@
     </plugins>
   </build>
 
-  <!-- Convey: Added a "sonatype" profile to easily release to Maven Central. -->
+  <!-- Convey: Added a "sonatype" profile to easily release to the Maven Central repository. -->
   <profiles>
     <profile>
       <id>sonatype</id>
       <build>
         <plugins>
           <!--
-            Publish artifacts to the Maven Central Repository instead of S3. Per the instructions
-            in the README file we require the user to log into Sonatype account to release the POM
-            as a final validation step, hence we explicitly set the "autoReleaseAfterClose" property
-            to "false".
+            Publish artifacts to the Maven Central repository. Per the instructions in the README
+            file we require the user to log into Sonatype account to release the POM as a final
+            validation step, hence we explicitly set the "autoReleaseAfterClose" property to "false".
           -->
           <plugin>
             <groupId>org.sonatype.plugins</groupId>
@@ -170,7 +169,7 @@
             </configuration>
           </plugin>
 
-          <!-- Sign artifacts with GPG, which is required to publish to the Maven Central Repository. -->
+          <!-- Sign artifacts with GPG, which is required to publish to the Maven Central repository. -->
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-gpg-plugin</artifactId>
