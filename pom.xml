@@ -150,6 +150,9 @@
   <profiles>
     <profile>
       <id>sonatype</id>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
       <build>
         <plugins>
           <!--

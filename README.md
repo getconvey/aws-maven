@@ -18,7 +18,7 @@ To publish Maven artifacts to S3 a build extension must be defined in a project'
       <extension>
         <groupId>com.getconvey.oss</groupId>
         <artifactId>aws-maven</artifactId>
-        <version>5.0.0.RELEASE.MSH.1.CONVEY.3</version>
+        <version>5.0.0.RELEASE.MSH.1.CONVEY.4</version>
       </extension>
       ...
     </extensions>
@@ -94,13 +94,13 @@ Don't put these credentials or this file anywhere other than your laptop!
 
 ## Creating a new release
 
-To release this POM to the Maven Central repository you'll need to activate
+To release this POM to the Maven Central repository you'll need to use
 the `sonatype` profile and deploy the POM as you would otherwise normally
 do.
 
 ```bash
-# Activate and enable the sonatype profile, prepare and then perform the release.
-mvn -P sonatype release:prepare release:perform
+# Prepare and then perform the release.
+mvn release:prepare release:perform
 ```
 
 If the above command fails with "gpg: problem with the agent: Inappropriate
