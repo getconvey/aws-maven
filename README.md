@@ -8,42 +8,42 @@ Convey's fork is based on [Main Street Hub's fork](https://github.com/mainstreet
 # Usage
 To publish Maven artifacts to S3 a build extension must be defined in a project's `pom.xml`.
 
-	<project>
-	    ...
-	    <build>
-	        ...
-	        <extensions>
-	            ...
-	            <extension>
-	                <groupId>com.getconvey.oss</groupId>
-                    <artifactId>aws-maven</artifactId>
-                    <version>5.0.0.RELEASE.MSH.1.CONVEY.3</version>
-	            </extension>
-	            ...
-	        </extensions>
-	        ...
-	    </build>
-	    ...
-	</project>
+  <project>
+    ...
+    <build>
+      ...
+      <extensions>
+        ...
+        <extension>
+          <groupId>com.getconvey.oss</groupId>
+          <artifactId>aws-maven</artifactId>
+          <version>5.0.0.RELEASE.MSH.1.CONVEY.3</version>
+        </extension>
+        ...
+      </extensions>
+      ...
+    </build>
+    ...
+  </project>
 
 Once the build extension is configured distribution management repositories can be defined in the `pom.xml` with an `s3://` scheme.
 
-	<project>
-	  ...
-	  <distributionManagement>
-	      <repository>
-	          <id>aws-release</id>
-	          <name>AWS Release Repository</name>
-	          <url>s3://distribution.bucket/release</url>
-	      </repository>
-	      <snapshotRepository>
-	          <id>aws-snapshot</id>
-	          <name>AWS Snapshot Repository</name>
-	          <url>s3://distribution.bucket/snapshot</url>
-	      </snapshotRepository>
-	  </distributionManagement>
-	  ...
-	</project>
+  <project>
+    ...
+    <distributionManagement>
+      <repository>
+        <id>aws-release</id>
+        <name>AWS Release Repository</name>
+        <url>s3://distribution.bucket/release</url>
+      </repository>
+      <snapshotRepository>
+        <id>aws-snapshot</id>
+        <name>AWS Snapshot Repository</name>
+        <url>s3://distribution.bucket/snapshot</url>
+      </snapshotRepository>
+    </distributionManagement>
+    ...
+  </project>
 
 Finally the appropriate AWS credentials need to be provided through the credentials chain.
 
