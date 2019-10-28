@@ -18,7 +18,7 @@ To publish Maven artifacts to S3 a build extension must be defined in a project'
       <extension>
         <groupId>com.getconvey.oss</groupId>
         <artifactId>aws-maven</artifactId>
-        <version>5.0.0.RELEASE.MSH.1.CONVEY.4</version>
+        <version>5.0.0.RELEASE.MSH.1.CONVEY.5</version>
       </extension>
       ...
     </extensions>
